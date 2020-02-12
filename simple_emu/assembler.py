@@ -25,8 +25,8 @@ class Mnemonic:
 
         self.ope = self.__str_to_opecode(splited_m[0])
         
-        self.arg1 = self.__str_to_value(splited_m[1]) if len(splited_m) > 0 else None
-        self.arg2 = self.__str_to_value(splited_m[2]) if len(splited_m) > 1 else None
+        self.arg1 = self.__str_to_value(splited_m[1]) if len(splited_m) > 1 else None
+        self.arg2 = self.__str_to_value(splited_m[2]) if len(splited_m) > 2 else None
 
 
     def __str_to_opecode(self, op_str):
